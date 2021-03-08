@@ -28,7 +28,7 @@ function setup() {
 Engine.run(engine);
 
 //creating a canvas
-createCanvas(4500,1000);
+createCanvas(4500,displayHeight);
 
 
 
