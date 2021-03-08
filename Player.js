@@ -13,10 +13,9 @@ class Player{
 		this.y=y;
         this.width = width;
         this.height = height;
+        this.image=loadAnimation("images/trex1.png","images/trex3.png","images/trex4.png");
       
-
-        
-
+        //this.image=loadImage("images/boy.png");
         World.add(world, this.player);
      
      
@@ -37,9 +36,11 @@ class Player{
         var pos=this.player.position;		
        push();
        translate(pos.x,pos.y);
-       rectMode(CENTER);
-       fill("white");
-       rect( 0, 0, this.width, this.height);
+       imageMode(CENTER);
+       //fill("white");
+       //rect( 0, 0, this.width, this.height);
+       animation(this.image,0,0,this.width,this.height);
+    //image(this.image,0,0,this.width,this.height);
        pop()
      }
 
